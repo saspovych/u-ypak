@@ -1,13 +1,15 @@
 <template>
-	<MyHeader />
+	<my-header />
 	<router-view />
+	<my-footer />
 </template>
 
 <script>
 	import MyHeader from "@/components/MyHeader.vue";
+	import MyFooter from "@/components/MyFooter.vue"
 	export default {
 		components: {
-			MyHeader,
+			MyHeader, MyFooter
 		},
 		data() {
 			return {
@@ -30,13 +32,23 @@ ul {
 	list-style-type: none;
 }
 .wrapper {
-	width: 85%;
+	width: 95%;
 	margin: 0 auto;
+}
+body {
+	font-family: "SF Pro Display";
 }
 
 
 
 
+
+@media screen and (max-width: 360px) {
+	.wrapper {
+		width: 95%;
+		margin: 0 auto;
+	}
+}
 
 
 @font-face {

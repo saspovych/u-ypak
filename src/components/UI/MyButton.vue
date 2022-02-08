@@ -6,9 +6,9 @@
 
 <script>
 	export default {
+		name: "my-button",
 		data() {
 			return {
-
 			}
 		}
 	}
@@ -29,5 +29,11 @@ button {
 	color: #FFFFFF;
 
 	cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+	button {
+		font-size: 14px;
+	}
 }
 </style>
