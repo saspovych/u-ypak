@@ -1,5 +1,5 @@
 <template>
-	<section id="about_us" class="middle_banner">
+	<section ref="about_us" class="middle_banner">
 		<div class="middle_banner_gray"></div>
 		<div class="about_us">
 			<div class="wrapper">

@@ -1,5 +1,5 @@
 <template>
-<section class="box_to_order">
+<section class="box_to_order" id="box_to_order">
 		<div class="wrapper">
 			<h3 class="to_order_title">Сделаем коробки которые вам нужны</h3>
 			<ul class="box_list">

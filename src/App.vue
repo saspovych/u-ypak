@@ -20,6 +20,18 @@
 </script>
 
 <style>
+:root {
+	--slider-bg: #F5F5F5;
+	--slider-connect-bg: #08A652;
+	--slider-height: 4px;
+
+	--slider-handle-bg: #FFFFFF;
+	--slider-handle-border: 3px solid #08A652;
+	--slider-handle-width: 14px;
+	--slider-handle-height: 14px;
+	--slider-handle-shadow: none;
+	--slider-handle-shadow-active: none;
+}
 * {
 	padding: 0;
 	margin: 0;

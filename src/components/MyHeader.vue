@@ -1,14 +1,14 @@
 <template>
 	<header>
 		<div class="wrapper">
-			<img class="logo" src="../assets/HeaderLogo.png" alt="Ю-Упак">
+			<img class="logo" @click="goToHomepage" src="../assets/HeaderLogo.png" alt="Ю-Упак">
 			<div class="header_navigation">
 				<nav>
 					<ul>
-						<li><a href="#about_us">О Компании</a></li>
-						<li><a href="">Продукция</a></li>
-						<li><a href="">Коробки на заказ</a></li>
-						<li><a href="">Контакты</a></li>
+						<li><a href="/#about_us">О Компании</a></li>
+						<li><a href="" @click.prevent="goToCatalog">Продукция</a></li>
+						<li><a href="/#box_to_order">Коробки на заказ</a></li>
+						<li><a href="#contacts">Контакты</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -21,6 +21,14 @@
 		data() {
 			return {
 
+			}
+		},
+		methods: {
+			goToCatalog() {
+				this.$router.push("/catalog");
+			},
+			goToHomepage(anchor) {
+				this.$router.push(`/`);
 			}
 		}
 	}
@@ -55,6 +63,8 @@ header {
 }
 .logo {
 	line-height: 88px;
+
+	cursor: pointer;
 }
 
 
